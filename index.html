@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="urtf-8">
+    <title>motorbike changer</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video id="chicks" autoplay muted loop>
+        <source src="chicks.mp4" type="video/mp4">            
+    </video>
+
+    <div class="main">
+        <div class="design" id="designmain" style="display: block;">
+            <h1 class="textDesign">ninja</h1>
+            <button id="btnDesign" onclick="myDesign()" class="button">Enter</button>
+        </div>
+        <div class="row" id="MotorbikeCColor" style="display: none;">
+            <div>
+                <h2 class="designName">Motorbike Color Changer</h2>
+                <img src="motor.png" id="photo">
+                <div class="row">
+                    <p class="d-col-md-3">Generate Ramdom Color</p>
+                    <p class="col">Generate Specific Color</p>
+                </div>
+            </div>
+            <div class="row">
+                <button class="col" onclick="MyGenerte()">Generate</button>
+                <select class="col" id="Idchoose">
+                    <option value="" select disabled hidden>color</option>
+                    <option name="colors">blue</option>
+                    <option name="colors">grey</option>
+                    <option name="colors">green</option>
+                    <option name="colors">yellow</option>
+                    <option value='#ADD8E6'>light blue</option>
+                    <option name="colors">black</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <button class="show" onclick="btnshow()">Show</button>
+                <button class="reset" onclick="btnreset()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
